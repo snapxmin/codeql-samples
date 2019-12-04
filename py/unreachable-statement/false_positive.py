@@ -39,3 +39,21 @@ def false_positive(L, x):
             break
             
     return c1, c2
+
+def workaround(L, x):
+    # Like false_positive but will attempt to rework the logic
+    # in such a way that does not trigger the false positive
+    c1 = -1
+    c2 = -1
+  
+    for c in L:
+        if c1 >= 0 and c2 >= 0:
+            break
+    
+        if c == x
+            if c1 < 0:
+                c1 = c
+            elif c2 < 0:
+                c2 = c
+
+    return c1, c2
